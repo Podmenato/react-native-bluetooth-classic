@@ -1,7 +1,7 @@
 
 # react-native-bluetooth-classic
 
-React Native Bluetooth Classic is meand to bridge the gap found with regards to IOS Bluetooth Classic using the External Accessory framework. 
+React Native Bluetooth Classic is meant to bridge the gap found with regards to IOS Bluetooth Classic using the External Accessory framework. 
 
 Based off the [react-native-bluetooth-serial](https://github.com/rusel1989/react-native-bluetooth-serial) port, and updated to replace [CoreBluetooth](https://developer.apple.com/documentation/corebluetooth) (BLE) on IOS with [External Accessory](https://developer.apple.com/documentation/externalaccessory/eaaccessory).
 
@@ -13,7 +13,10 @@ Since there seem to be some breaking changes introduced within React Native 0.60
 | --- | --- | --- | --- | --- |
 | 0.9.x | 0.41.0 - 0.59.9 | >= 4.1 (16) | >= IOS 9 | - Accept connection mode |
 | 0.10.x | >= 0.60.0 | >= 4.1 (16) | >= IOS 9 | - Accept connection mode |
-| 1.60.x | >= 0.60.0 | >= 8 (26) | >= IOS 9 | |
+| 1.60.x | >= 0.60.0 < 0.73.0 | >= 8 (26) | >= IOS 9 | |
+| 1.70.x | >= 0.73.0 | >= 16 (34) | >= IOS 9 | |
+
+> IOS may need updating in order to bring inline with 0.73
 
 If this breaks in a newer version of React Native, Android or IOS please open an issue.  Not sure what the resulting versions will (or should be) since `1.0.x (0.60.0)`, `2.0.x (0.64.0)` for example seems weird.  Although maybe `1.60.0` and `1.64.0` is pretty apparent to which version needs to be used?
 

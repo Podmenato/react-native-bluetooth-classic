@@ -10,11 +10,10 @@ on:
 jobs:
   build:
     # Runs on Ubuntu-latest
-    # with node version(s) 12.16.3
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: ['12.16.3']
+        node-version: ['18']
 
     # Checks out the appropriate branch (github.ref)
     # Creates release tag
@@ -32,6 +31,8 @@ jobs:
           registry-url: 'https://registry.npmjs.org'
       - name: Install dependencies
         run: npm ci
+      - name: Check Git Status
+        run: git status
       - name: Build and release tag
         run: npm run release
         env:
